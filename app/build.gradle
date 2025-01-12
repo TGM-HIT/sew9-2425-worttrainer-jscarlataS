@@ -28,3 +28,11 @@ dependencies {
     // JSON
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'at.jscarlata.Controller'
+        )
+    }
+}

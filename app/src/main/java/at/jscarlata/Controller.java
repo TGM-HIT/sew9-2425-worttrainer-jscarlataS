@@ -19,7 +19,7 @@ public class Controller {
         try {
             this.wt = saveLoad.load("/home/wood/Downloads/worttrainer.save");
         } catch (RuntimeException e) {
-            this.wt = new WortTrainer(new WortListe(new String[]{"Dog", "Cat"}, new String[]{"https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/800px-Cat_November_2010-1a.jpg"}));
+            this.wt = new WortTrainer(new WortListe(new String[]{"Alien", "Dog", "Cat"}, new String[]{"adasdasdasd", "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/800px-Cat_November_2010-1a.jpg"}));
         }
         this.v = new View(this);
     }

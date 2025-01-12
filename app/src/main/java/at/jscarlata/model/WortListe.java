@@ -14,7 +14,9 @@ public class WortListe implements Serializable {
 
         this.words = new WortEintrag[words.length];
         for (int i = 0; i < words.length; i++) {
-            this.words[i] = new WortEintrag(words[i], urls[i]);
+            if (WortEintrag.checkUrl(urls[i])) {
+                this.words[i] = new WortEintrag(words[i], urls[i]);
+            }
         }
     }
 
